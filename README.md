@@ -12,13 +12,14 @@
   <code>Next.js</code>
   <code>React</code>
   <code>TypeScript</code>
+  <code>Claude</code>
   <code>Anthropic API</code>
   <code>Vercel</code>
 </p>
 
 ## What this is :sparkles:
 
-Neural Zero is a hackathon prototype and demo experience.
+Neural Zero is a hackathon prototype and demo experience powered by six Claude agents.
 
 I designed it around one simple idea:
 
@@ -31,7 +32,7 @@ The project has:
 - a landing page that explains the problem and the system
 - a patient directory
 - a dossier page with human context, baseline notes, and clinician-style context
-- a war room where multiple agents debate what the system is seeing
+- a war room where six Claude agents debate what the system is seeing
 - a report view that summarizes technical findings, clinical interpretation, and final action
 
 ## The demo flow :movie_camera:
@@ -53,7 +54,7 @@ I currently use two demo patients:
 
 ## What I wanted to prove :dart:
 
-I wanted this project to feel like something that could sit between messy real hospital infrastructure and an actual clinical team.
+I wanted this project to feel like something that could sit between messy real hospital infrastructure and an actual clinical team, with six Claude agents doing the reasoning work.
 
 That is why I included:
 
@@ -102,6 +103,7 @@ It includes:
 - a Bio popup with a Holter deterioration replay
 - a Chief consensus stream
 - a downloadable clinical report
+- six Claude agents, each with a distinct role and voice
 
 ## Tech stack :gear:
 
@@ -111,7 +113,7 @@ It includes:
 - `Tailwind CSS`
 - `Radix UI`
 - `Lucide React`
-- `Anthropic API` for the live relay mode
+- `Claude via the Anthropic API` for the live relay mode
 
 ## Project structure :card_index_dividers:
 
@@ -167,7 +169,7 @@ If I am using a different port locally, I just open that port instead.
 I built the console so it can work in two ways:
 
 - `cached`: best for demos, stable and predictable
-- `live`: pulls server-side generated war-room output through the Anthropic API
+- `live`: pulls server-side generated war-room output through Claude via the Anthropic API
 
 If the API key is missing, the app still works in cached mode.
 
