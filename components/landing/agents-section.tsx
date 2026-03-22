@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Bot, Eye, Activity, FileText, Pill, Shield, Crown } from "lucide-react";
+import { Bot, Eye, Activity, FileText, GitBranch, Shield, Crown } from "lucide-react";
 
 const agents = [
   {
@@ -29,10 +29,10 @@ const agents = [
     bgColor: "bg-purple-500/10",
   },
   {
-    icon: Pill,
-    name: "Agent_Pharma",
-    role: "Medication Analysis",
-    description: "Checks active IV drips to ensure vitals aren't side effects of Beta-Blockers, Morphine, or other medications.",
+    icon: GitBranch,
+    name: "Agent_CrossCheck",
+    role: "Historical Graph",
+    description: "Cross-checks the live patient against nearest historical trajectories to see whether the current signal pattern matches a known danger path or a safer decoy.",
     color: "text-orange-500",
     bgColor: "bg-orange-500/10",
   },
