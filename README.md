@@ -193,6 +193,7 @@ So the whole repo is built around clarity, atmosphere, and believable clinical s
 ## Important note :warning:
 
 This is a prototype for demonstration purposes, not a real medical device, not a diagnostic tool, and not clinical advice.
+Also, the patient videos are AI Generated !
 
 ## Author :wave:
 
