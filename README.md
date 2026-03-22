@@ -17,6 +17,10 @@
   <code>Vercel</code>
 </p>
 
+<p align="center">
+  <a href="https://neuralzero.vercel.app/">Live demo on Vercel</a>
+</p>
+
 ## What this is :sparkles:
 
 Neural Zero is a hackathon prototype and demo experience powered by six Claude agents.
@@ -62,6 +66,10 @@ That is why I included:
 - a historical nearest-case graph lane
 - a Holter-style electrical comparator for the Bio lane
 - a glassy but readable console that feels more like a workstation than a generic dashboard
+
+## Vision note :eyes:
+
+The Vision lane is built to work with a real camera feed, but for the demo I layered the visual cues, scan overlays, and face locks so the experience is still believable and easy to present without a live camera setup.
 
 ## Main features :brain:
 
