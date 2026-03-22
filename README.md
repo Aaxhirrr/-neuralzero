@@ -1,7 +1,7 @@
 # Neural Zero :heart:
 
 <p align="center">
-  <strong>I built Neural Zero as a predictive surveillance system for paralyzed patients.</strong>
+  <strong>I built Neural Zero as a predictive surveillance system for patients with cardiovascular history who have a hard time communicating and expressing themselves.</strong>
 </p>
 
 <p align="center">
