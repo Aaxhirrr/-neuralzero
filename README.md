@@ -1,4 +1,4 @@
-# Neural Zero
+# Neural Zero :heart:
 
 <p align="center">
   <strong>I built Neural Zero as a predictive surveillance system for paralyzed patients.</strong>
@@ -16,7 +16,7 @@
   <code>Vercel</code>
 </p>
 
-## What this is
+## What this is :sparkles:
 
 Neural Zero is a hackathon prototype and demo experience.
 
@@ -34,7 +34,7 @@ The project has:
 - a war room where multiple agents debate what the system is seeing
 - a report view that summarizes technical findings, clinical interpretation, and final action
 
-## The demo flow
+## The demo flow :movie_camera:
 
 This is the flow I use when I present it:
 
@@ -51,7 +51,7 @@ I currently use two demo patients:
 - `PT-001 / Morgan Ellison`: quiet baseline, observe-only case
 - `PT-002 / Rowan Hale`: distress case, predictive escalation case
 
-## What I wanted to prove
+## What I wanted to prove :dart:
 
 I wanted this project to feel like something that could sit between messy real hospital infrastructure and an actual clinical team.
 
@@ -60,12 +60,11 @@ That is why I included:
 - a hidden cached/live relay mode
 - a historical nearest-case graph lane
 - a Holter-style electrical comparator for the Bio lane
-- terminal scripts that look like legacy HL7 traffic and live camera perception output
 - a glassy but readable console that feels more like a workstation than a generic dashboard
 
-## Main features
+## Main features :brain:
 
-### 1. Landing page
+### 1. Landing page :globe_with_meridians:
 
 I wanted the first impression to feel calm, technical, and intentional.
 
@@ -76,7 +75,7 @@ The homepage explains:
 - the multi-agent reasoning model
 - why silent or preventable deterioration matters
 
-### 2. Patient dossier
+### 2. Patient dossier :page_facing_up:
 
 I did not want the patient pages to feel like anonymous machine output.
 
@@ -89,7 +88,7 @@ So each dossier includes:
 - nursing note
 - baseline persona based on time already spent in the hospital
 
-### 3. War room
+### 3. War room :heart:
 
 The war room is the core experience.
 
@@ -104,18 +103,7 @@ It includes:
 - a Chief consensus stream
 - a downloadable clinical report
 
-### 4. Demo-only realism scripts
-
-I also added standalone terminal scripts so I can show supporting infrastructure during a live demo without wiring everything directly into the app UI.
-
-- `scripts/legacy_hl7_relay.py`
-- `scripts/vision_perception_relay.py`
-- `scripts/hardcoded_knowledge_graph.py`
-- `scripts/hardcoded_holter.py`
-
-These help me present the system as if it is receiving live monitor data, camera perception data, graph cross-check context, and electrical-breakdown context in real time.
-
-## Tech stack
+## Tech stack :gear:
 
 - `Next.js 16`
 - `React 19`
@@ -124,9 +112,8 @@ These help me present the system as if it is receiving live monitor data, camera
 - `Radix UI`
 - `Lucide React`
 - `Anthropic API` for the live relay mode
-- `Python` for demo support scripts
 
-## Project structure
+## Project structure :card_index_dividers:
 
 ```text
 app/
@@ -144,7 +131,7 @@ src/
   vids/
 ```
 
-## Local setup
+## Local setup :rocket:
 
 ### 1. Install dependencies
 
@@ -175,33 +162,7 @@ http://localhost:3000
 
 If I am using a different port locally, I just open that port instead.
 
-## Demo scripts
-
-### Legacy HL7 relay
-
-```bash
-python scripts/legacy_hl7_relay.py --patient patient-2 --mode raw --interval 0.03
-```
-
-### Vision perception relay
-
-```bash
-python scripts/vision_perception_relay.py --patient patient-2 --mode compact --interval 0.12
-```
-
-### Historical graph payload
-
-```bash
-python scripts/hardcoded_knowledge_graph.py patient-2
-```
-
-### Holter comparator payload
-
-```bash
-python scripts/hardcoded_holter.py patient-2
-```
-
-## Live mode vs cached mode
+## Live mode vs cached mode :arrows_counterclockwise:
 
 I built the console so it can work in two ways:
 
@@ -210,13 +171,13 @@ I built the console so it can work in two ways:
 
 If the API key is missing, the app still works in cached mode.
 
-## About the dataset folder
+## About the dataset folder :file_folder:
 
 The files inside `src/dataset` are there for presentation and context.
 
 They are not required for the main app flow, and I did not treat them as a production-grade medical backend.
 
-## Why I made it this way
+## Why I made it this way :thought_balloon:
 
 I did not want this to feel like a generic "AI healthcare dashboard."
 
@@ -227,13 +188,13 @@ I wanted it to feel like:
 - a system with layered reasoning
 - a product demo that tells a story clearly
 
-So the whole repo is built around clarity, atmosphere, and demo realism.
+So the whole repo is built around clarity, atmosphere, and believable clinical storytelling.
 
-## Important note
+## Important note :warning:
 
 This is a prototype for demonstration purposes, not a real medical device, not a diagnostic tool, and not clinical advice.
 
-## Author
+## Author :wave:
 
 Built by me, Aashir.
 
